@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="logo" data-tilt id="logo">Foods App</div>
+        <div class="search">
+          <input id="search-input" type="text" placeholder="Cari makanan ..." />
+          <div class="search-button">Cari</div>
+        </div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#produk-kami">Produk</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="home" class="home">
+        <div class="overlay">
+          <h1 class="salam">Selamat datang di foods app</h1>
+          <p class="deskripsi">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque
+            expedita atque excepturi, molestiae sed aut. Iste itaque doloremque
+            nihil.
+          </p>
+        </div>
+      </div>
+      <h1 class="produk-kami" id="produk-kami">Produk Kami</h1>
+      <div class="produk-container">
+        <div class="filter-container">
+          <h1 class="kategori">Kategori</h1>
+          <p>Beef</p>
+          <p>Chicken</p>
+          <p>Seafood</p>
+          <p>Dessert</p>
+          <p>Side</p>
+          <p>Vegan</p>
+          <p>Breakfast</p>
+          <p>Starter</p>
+        </div>
+        <produk-list></produk-list>
+      </div>
+      <form id="kontak">
+        <h1>Kontak Kami</h1>
+        <div class="form-wrapper">
+          <label for="nama-depan">Nama Depan</label>
+          <input
+            placeholder="Masukkan nama depan anda"
+            type="text"
+            name="nama-depan"
+            id="nama-depan"
+          />
+        </div>
+        <div class="form-wrapper">
+          <label for="nama-belakang">Nama Belakang</label>
+          <input
+            placeholder="Masukkan nama belakang anda"
+            type="text"
+            name="nama-belakang"
+            id="nama-belakang"
+          />
+        </div>
+        <div class="form-wrapper">
+          <label for="email">Email</label>
+          <input
+            placeholder="Masukkan email anda"
+            type="email"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="form-wrapper">
+          <label for="pesan">Pesan</label>
+          <textarea
+            placeholder="Masukkan pesan yang ingin anda sampaikan"
+            type="text"
+            name="pesan"
+            id="pesan"
+          ></textarea>
+        </div>
+
+        <input type="submit" class="submit" />
+      </form>
+      <produk-list></produk-list>
+    </main>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="search">
+          <input id="search-modal" type="text" placeholder="Cari makanan ..." />
+          <div class="cancel-button">Cancel</div>
+        </div>
+        <search-list class="search-list"> </search-list>
+      </div>
+    </div>
+  </body>
+</html>
